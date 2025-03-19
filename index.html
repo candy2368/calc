@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="StyleCalc.css">
+</head>
+<body>
+    <h6>Name: Chorn Chhay Vanichea</h6>
+    <div style="margin-top: 4%;" class="outline">
+    <form>
+        <center>
+        <div class="output">
+          <input type="text" class="output1" name="display">
+        </div>
+    </center>
+        <div class="calc-btts">
+          <center>
+            <div>
+                <input type="button" class="calc-btt calc-btt1" value="%" onclick="display.value += '%'">
+                <input type="button" class="calc-btt calc-btt1" value="C" onclick="display.value = ''">
+                <input type="button" class="calc-btt calc-btt1" style="width: 130px;" value="&larr;" onclick="display.value = display.value.toString().slice(0,-1)">
+            </div>
+            <div>
+                <input type="button" class="calc-btt" value="1" onclick="display.value += '1' ">
+                <input type="button" class="calc-btt" value="2" onclick="display.value += '2' ">
+                <input type="button" class="calc-btt" value="3" onclick="display.value += '3' ">
+                <input type="button" class="calc-btt calc-btt1" value="&divide;" onclick="display.value += '/'">
+            </div>
+            <div>
+                <input type="button" class="calc-btt" value="4" onclick="display.value += '4' ">
+                <input type="button" class="calc-btt" value="5" onclick="display.value += '5' ">
+                <input type="button" class="calc-btt" value="6" onclick="display.value += '6' ">
+                <input type="button" class="calc-btt calc-btt1" value="&times;" onclick="display.value += '*'">
+            </div>
+            <div>
+                <input type="button" class="calc-btt" value="7" onclick="display.value += '7' ">
+                <input type="button" class="calc-btt" value="8" onclick="display.value += '8' ">
+                <input type="button" class="calc-btt" value="9" onclick="display.value += '9' ">
+                <input type="button" class="calc-btt calc-btt1" name="plus" value="&minus;"  onclick="display.value += '-'">
+            </div>
+            <div>
+                <input type="button" class="calc-btt" style="border-bottom-left-radius: 20px;" value="&dot;" onclick="display.value += '.'">
+                <input type="button" class="calc-btt" value="0" onclick="display.value += '0' ">
+                <input type="button" class="calc-btt" value="&equals;" onclick="display.value = eval(display.value)">
+                <input type="button" class="calc-btt calc-btt1" style="border-bottom-right-radius: 20px;" value="&plus;" onclick="display.value += '+'">
+            </div>
+       
+        </center>
+        </div>
+    </form>
+</div>
+
+<script language="Javascript" ></script>
+</body>
+</html> 
